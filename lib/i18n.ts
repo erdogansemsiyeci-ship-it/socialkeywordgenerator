@@ -22,6 +22,26 @@ export const localeNativeNames: Record<Locale, string> = {
   sl: "Slovenščina", sr: "Српски", lv: "Latviešu", et: "Eesti",
 };
 
+export const countryFlags: Record<Locale, string> = {
+  en: "🇺🇸", zh: "🇨🇳", de: "🇩🇪", ja: "🇯🇵", hi: "🇮🇳",
+  fr: "🇫🇷", pt: "🇧🇷", it: "🇮🇹", ru: "🇷🇺", ko: "🇰🇷",
+  es: "🇪🇸", id: "🇮🇩", nl: "🇳🇱", tr: "🇹🇷", ar: "🇸🇦",
+  pl: "🇵🇱", sv: "🇸🇪", uk: "🇺🇦", ro: "🇷🇴", cs: "🇨🇿",
+  el: "🇬🇷", hu: "🇭🇺", da: "🇩🇰", fi: "🇫🇮", nb: "🇳🇴",
+  bg: "🇧🇬", hr: "🇭🇷", sk: "🇸🇰", lt: "🇱🇹",
+  sl: "🇸🇮", sr: "🇷🇸", lv: "🇱🇻", et: "🇪🇪",
+};
+
+export const countryNames: Record<Locale, string> = {
+  en: "United States", zh: "中国", de: "Deutschland", ja: "日本", hi: "भारत",
+  fr: "France", pt: "Brasil", it: "Italia", ru: "Россия", ko: "대한민국",
+  es: "España", id: "Indonesia", nl: "Nederland", tr: "Türkiye", ar: "السعودية",
+  pl: "Polska", sv: "Sverige", uk: "Україна", ro: "România", cs: "Česká republika",
+  el: "Ελλάδα", hu: "Magyarország", da: "Danmark", fi: "Suomi", nb: "Norge",
+  bg: "България", hr: "Hrvatska", sk: "Slovensko", lt: "Lietuva",
+  sl: "Slovenija", sr: "Србија", lv: "Latvija", et: "Eesti",
+};
+
 const translations: Record<Locale, Record<string, string>> = {
   en: {
     siteName: "Social Keyword Generator",
