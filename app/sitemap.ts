@@ -24,6 +24,7 @@ async function fetchBlogPosts(): Promise<BlogPost[]> {
       .from("blog_posts")
       .select("slug, updated_at, published_at, locale")
       .eq("published", true)
+      .in("locale", ["en", "tr"])
       .order("published_at", { ascending: false })
       .limit(200);
     return data || [];
