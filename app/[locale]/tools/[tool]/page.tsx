@@ -4,6 +4,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { KeywordTool } from "@/components/KeywordTool";
 import { locales } from "@/lib/i18n";
 import type { Locale } from "@/lib/i18n";
+import { toolGuides } from "@/lib/toolGuides";
 
 const BASE_URL = "https://socialkeywordgenerator.com";
 
@@ -286,6 +287,20 @@ export default async function ToolPage({ params }: Props) {
             ))}
           </div>
         </section>
+
+        {/* Detailed Guide (English only — rich SEO content) */}
+        {locale === "en" && toolGuides[tool] && (
+          <section className="mt-8 prose prose-gray max-w-none bg-white rounded-2xl border border-gray-100 p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">
+              {toolGuides[tool].title}
+            </h2>
+            {toolGuides[tool].paragraphs.map((p: string, i: number) => (
+              <p key={i} className="text-gray-600 leading-relaxed mb-4">
+                {p}
+              </p>
+            ))}
+          </section>
+        )}
       </div>
     </>
   );
