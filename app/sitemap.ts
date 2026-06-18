@@ -8,6 +8,7 @@ const staticPages = ["about","contact","privacy","terms","faq","sitemap"];
 
 interface BlogPost {
   slug: string;
+  locale?: string;
   updated_at: string | null;
   published_at: string;
 }
